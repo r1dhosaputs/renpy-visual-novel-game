@@ -1,0 +1,98 @@
+sumi
+yalign 0.1
+zoom 1.2
+
+miki
+yalign -0.3
+zoom 1.18
+
+
+show miki at right :
+alpha 0.7 untuk transparansi
+
+##### SUMI chr1 ####
+// buka mulut
+hide sumi
+show sumi_open at left :
+    yalign 0.1
+    zoom 1.2
+    xzoom -1
+with dissolve
+
+// tutup mulut
+hide sumi_open
+    show sumi at left :
+    yalign 0.1
+    zoom 1.2
+with dissolve
+
+
+##### MIKI chr2 #####
+//buka mulut
+hide miki
+show miki_open at right :
+    yalign -0.3
+    zoom 1.18
+    xzoom -1   
+with dissolve 
+
+//tutup mulut
+hide miki_open
+show miki at right :
+    yalign -0.3
+    zoom 1.18   
+with dissolve
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bagaimana melakuukan flip gambar di renpy ?
+ChatGPT
+Untuk melakukan flip atau membalik gambar dalam Ren'Py, Anda dapat menggunakan properti xzoom dengan nilai negatif (-1). Ini akan membalik gambar secara horizontal. Berikut adalah contoh penggunaannya:
+
+python
+Copy code
+show gambar:
+    xzoom -1  # Memflip gambar secara horizontal
+Dalam contoh di atas, gambar yang ditampilkan akan diputar secara horizontal atau dibalik.
+
+Jika Anda ingin membalik gambar secara vertikal, Anda dapat menggunakan properti yzoom dengan nilai negatif (-1), seperti ini:
+
+python
+Copy code
+show gambar:
+    yzoom -1  # Memflip gambar secara vertikal
